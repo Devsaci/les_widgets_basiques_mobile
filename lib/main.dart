@@ -33,7 +33,7 @@ class BasicsPage extends StatelessWidget {
     var platform = Theme.of(context).platform;
     print("size: $size");
     print("platform: $platform");
-  return Container(height: 10,width: 10,);
+  return Container(height: 10,width: 10, color: Colors.amber,);
   }
 
 }
