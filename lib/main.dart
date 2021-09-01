@@ -22,15 +22,18 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home: BasicsPage(title: 'Flutter Demo Home Page'),
+      home: BasicsPage(),
     );
   }
 }
 class BasicsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    var size = MediaQuery.of(context).size;
+    var platform = Theme.of(context).platform;
+    print("size: $size");
+    print("platform: $platform");
+  return Container(height: 10,width: 10,);
   }
 
 }
